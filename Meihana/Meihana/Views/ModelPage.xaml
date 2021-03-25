@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Meihana.Views.ModelPage"
+             xmlns:vm="clr-namespace:Meihana.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout Padding="16" Spacing="16">
+            <!--  Header label  -->
+
+            <Frame BorderColor="White" Margin="0">
+                <Frame.Triggers>
+                    <DataTrigger TargetType="{x:Type Frame}" Value="True">
+
+                    </DataTrigger>
+                </Frame.Triggers>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" ></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Margin="0,0,0,16"
+                           Padding="48,0,0,0"
+                           HorizontalOptions="Center" VerticalOptions="Center"
+                           FontSize="Large"
+                           Text="About Meihana"></Label>
+
+                </Grid>
+            </Frame>
+            <Label Grid.Row="0" Grid.Column="0" Text="The Meihana Model" Font="Large" LineBreakMode="TailTruncation"/>
+            <Label Grid.Row="1" Grid.Column="0" Text="This model provides a basis for a more comprehensive assessment of clients/whanau and underpins appropriate treatment decisions."  />
+
+            <Image
+                                                Aspect="AspectFill"
+                                                HeightRequest="140"
+                                                Source="meihana.png">
+
+            </Image>
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Clinician" Font="Large" LineBreakMode="TailTruncation" />
+            <Label Grid.Row="3" Grid.Column="0" Text="The aim is NOT to determine 'how Māori a client is' but to identify their beliefs, values and experiences within a Māori context; currently and in the past.The Meihana Model was developed for a Mental health situation but can be applied across the health arena."  />
+            <Label Grid.Row="2" Grid.Column="0" Text="Whanau" Font="Large" LineBreakMode="TailTruncation" />
+            <Label Grid.Row="3" Grid.Column="0" Text="Definition: Client support networks
+Rationale: Whanau is seen as having a key role in the assessment, intervention and monitoring process of the client/whanau.
+Application:
+involve whanau with Assessment (Ax) and intervention.
+Allow space to for this.
+Whanau has opportunity to decide on the level of Maori cultural input to engage in.
+The ability to give feedback about cultural safety of the service." />
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Tinana" Font="Large" LineBreakMode="TailTruncation" />
+            <Label Grid.Row="3" Grid.Column="0" Text="Definition: Working to promote physical wellbeing of client/whanau.
+Rationale: To ensure that the service encompasses the importance of physical well-being and its relationship to overall psychological wellbeing.
+Application:
+Policies and procedures in place for referrals with clients consent.
+Results from assessments need to be clearly articulated to client/whanau about how these will inform the overall treatment plan." />
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Hinengaro" Font="Large" LineBreakMode="TailTruncation" />
+            <Label Grid.Row="3" Grid.Column="0" Text="Definition: To address clear potential biases within the current psychological practice.
+Rationale: To ensure cultural accountability of measures used to provide evidence that supports or challenges hypotheses/diagnosis around the presenting behaviours.
+Application:
+Ax tools and diagnosis processes within appropriate cultural context to ensure valid hypotheses and appropriate interventions.
+Services identify barriers or biases when working with Māori.
+Policies and resources to support clinicians in supervision so that analysis of Ax data is matched to Māori beliefs, values and experiences."/>
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Wairua " Font="Large" LineBreakMode="TailTruncation" />
+            <Label Grid.Row="3" Grid.Column="0" Text="Definition: Level of Attachment
+Rationale: To investigate factors that contribute to engagement and therefore the level of attachment the client/whanu feel to the service and services being provided.
+Application:
+Who and where the client feel connected to (reduces rate of non-attendance, and for client/whanau to feel safe).
+Look at what, within a service that may be a barrier/s to clients attachment to that service.
+Space for important rituals to client/whanau, eg karakia." />
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

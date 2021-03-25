@@ -1,0 +1,8 @@
+C:\Users\imdea\source\repos\Meihana\Meihana\Meihana.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\imdea\source\repos\Meihana\Meihana\Meihana.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\imdea\source\repos\Meihana\Meihana\Meihana.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\imdea\source\repos\Meihana\Meihana\Meihana.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+C:\Users\imdea\source\repos\Meihana\Meihana\Meihana.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\imdea\source\repos\Meihana\Meihana\Meihana.iOS\obj\iPhone\Debug\optimized\
+C:\Users\imdea\source\repos\Meihana\Meihana\Meihana.iOS\obj\iPhone\Debug\Meihana.iOS.csprojAssemblyReference.cache
+C:\Users\imdea\source\repos\Meihana\Meihana\Meihana.iOS\obj\iPhone\Debug\Meihana.iOS.csproj.CoreCompileInputs.cache

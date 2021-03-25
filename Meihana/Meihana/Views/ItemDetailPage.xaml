@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             x:Class="Meihana.Views.ItemDetailPage"
+             Title="{Binding Title}">
+
+    <StackLayout Padding="15" Spacing="20">
+        <Label FontSize="Medium" Text="Name:" />
+        <Label
+            d:Text="Item name"
+            FontSize="Medium"
+            Text="{Binding Item.Text}" />
+        <Label FontSize="Small" Text="Description:" />
+        <Label
+            d:Text="Item description"
+            FontSize="Small"
+            Text="{Binding Item.Description}" />
+        <Label FontSize="Small" Text="URL:" />
+        <Label
+            TextColor="Blue" 
+            d:Text="Link:"
+            FontSize="Small"
+            Text="{Binding Item.url}">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding ClickCommand}" CommandParameter="{Binding Item.url}"/>
+            </Label.GestureRecognizers>
+        </Label>
+    </StackLayout>
+
+</ContentPage>
